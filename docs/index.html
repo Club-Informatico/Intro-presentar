@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
+            min-height: 100svh;
+            display: flex;
+            flex-direction: column;
             font-family: Arial, sans-serif;
             background-color: #0a0a0a;
             color: #f0f0f0;
@@ -23,6 +26,7 @@
             font-size: 2rem;
         }
         .container {
+            flex: 1 !important;
             max-width: 900px;
             margin: 30px auto;
             padding: 15px;
@@ -41,6 +45,8 @@
             gap: 20px;
         }
         .card {
+            display: flex;
+            flex-direction: column;
             background: #1a1a1a;
             border: 1px solid #333;
             padding: 15px;
@@ -52,9 +58,14 @@
             margin-top: 0;
             color: #00ff99;
         }
+        .links {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
         .links a {
             display: inline-block;
-            margin-right: 15px;
             color: #00ff99;
             font-size: 1.5rem;
         }
@@ -69,12 +80,11 @@
             border-top: 1px solid #333;
             margin-top: 30px;
         }
-
         .photo {
-            text-align: center;
+            display: flex;
+            justify-content: center;
             margin-top: 10px;
         }
-
         .photo img {
             width: 100px;
             height: 100px;
@@ -82,9 +92,6 @@
             object-fit: cover;
             border: 2px solid #00ff99;
         }
-
-      
-
     </style>
 </head>
 <body>
@@ -231,7 +238,16 @@
                 <a href="https://www.linkedin.com/in/cristopher-reyes-villagra-0202382a0" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/crisp101" target="_blank"><i class="fab fa-github"></i></a>
               </div>
-             
+          </div>
+        
+        <!-- Aquí los demás miembros agregarán su bloque -->
+          <div class="card">
+              <h3>Alejandro Rebolledo</h3>
+              <p>Investigador y docente universitario, especialista en electrónica, programación con enfoque <em>maker</em> y pasión por el aprendizaje continuo. Entusiasta del <em>open source</em>. </p>
+              <div class="links">
+                  <a href="https://www.linkedin.com/in/alejandro-rebolledo-72587756/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/AleReb" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
           </div>
 
           <div class="card">
@@ -244,8 +260,72 @@
               
           </div>
         <!-- Aquí los demás miembros agregarán su bloque -->
-
+        <div class="card">
+            <h3>Gustavo Orellana</h3>
+            <p>Ingeniero en Computación e Informática con enfoque en <em>Backend</em> y <em>Front-End</em> apasionado por la
+                creación de soluciones escalables.</p>
+            <p>Me motiva aprender nuevas tecnologías enfocadas en la automatización</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/gustavo-orellana-s%C3%A1nchez/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Gaos700" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
         <!-- Aquí los demás miembros agregarán su bloque -->
+                <div class="card">
+                    <h3>Francisco Briones</h3>
+                    <p>
+                        Ingeniero de software con 8 años de experiencia, enfocado en <em>Cloud</em>, <em>IA</em> y arquitectura de
+                        software.
+                    </p>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/francisco-javier-briones-letelier-9a5439137/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/FranciscoJBL" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+        <!-- Aquí los demás miembros agregarán su bloque -->
+                <div class="card">
+                    <h3>Jairo Guzmán</h3>
+                    <p>
+                        Ingeniero en Redes y autodidacta en programación, tratando de mejorar mis conocimientos en automatización y Data
+                        Science.
+                    </p>
+                    <p>
+                        Interesado en explotar la automatización para temas de redes, ciberseguridad, reportería y análisis de datos.
+                    </p>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/jairo-guzman-9bb2311b5/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/triip01" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+        <!-- Aquí los demás miembros agregarán su bloque -->
+        <div class="card">
+            <h3>Matías N. Salas</h3>
+            <p><em>Ingeniero de Software</em> apasionado por la programación, el modelado 3D y el desarrollo de videojuegos.</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/dislaik/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Dislaik" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+<!-- Aquí los demás miembros agregarán su bloque -->
+                <div class="card">
+            <h3>Claudio Castillo</h3>
+            <p>Estudiante 2º año de Ingeniería en Informática. Interesado en mención <em>Ciencia de datos</em>.</p>
+            <p>Apasionado por Bases de datos, SQL, Python.</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/claudiocastillo-/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ClaudioCasti8" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            </div> 
+            <!-- Aquí los demás miembros agregarán su bloque -->
+
+            <!-- Aquí los demás miembros agregarán su bloque -->
+
+            <!-- Aquí los demás miembros agregarán su bloque -->
+
+            <!-- Aquí los demás miembros agregarán su bloque -->
     </div>
 </div>
 
