@@ -15,42 +15,35 @@
             margin: 0;
             padding: 0;
         }
-
         header {
             text-align: center;
             padding: 20px;
             background: #111;
             border-bottom: 2px solid #00ff99;
         }
-
         header h1 {
             color: #00ff99;
             font-size: 2rem;
         }
-
         .container {
             flex: 1 !important;
             max-width: 900px;
             margin: 30px auto;
             padding: 15px;
         }
-
         .intro {
             text-align: center;
             margin-bottom: 20px;
         }
-
         .intro p {
             font-size: 1.1rem;
             color: #ccc;
         }
-
         .presentaciones {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
         }
-
         .card {
             display: flex;
             flex-direction: column;
@@ -61,29 +54,24 @@
             box-shadow: 0 4px 10px rgba(0, 255, 153, 0.2);
             text-align: center;
         }
-
         .card h3 {
             margin-top: 0;
             color: #00ff99;
         }
-
         .links {
             margin-top: auto;
             display: flex;
             justify-content: center;
             gap: 12px;
         }
-
         .links a {
             display: inline-block;
             color: #00ff99;
             font-size: 1.5rem;
         }
-
         .links a:hover {
             color: #ffffff;
         }
-
         footer {
             text-align: center;
             padding: 10px;
@@ -92,13 +80,11 @@
             border-top: 1px solid #333;
             margin-top: 30px;
         }
-
         .photo {
             display: flex;
             justify-content: center;
             margin-top: 10px;
         }
-
         .photo img {
             margin: 0 0 20px;
             width: 100px;
@@ -107,338 +93,281 @@
             object-fit: cover;
             border: 2px solid #00ff99;
         }
-
-        ul {
-            list-style-type: none;
-            margin-left: 0;
-            padding-left: 0;
-        }
     </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>👾 Presentaciones del Club Informático Chile</h1>
-    </header>
+<header>
+    <h1>👾 Presentaciones del Club Informático Chile</h1>
+</header>
 
-    <div class="container">
-        <div class="intro">
-            <p>¡Bienvenido! Aquí puedes conocer a los miembros del club. Si eres
-                nuevo, y quieres aparecer en esta web debes contribuir al siguiente repositorio:</p>
+<div class="container">
+    <div class="intro">
+        <p>¡Bienvenido! Aquí puedes conocer a los miembros del club. Si eres
+          nuevo, y quieres aparecer en esta web debes contribuir al siguiente repositorio:</p>
+        <div class="links">
+          <a
+            href="https://github.com/Club-Informatico/Intro-presentar"
+            target="_blank"
+            >Github: Intro-presentar</a>
+        </div>
+    </div>
+
+    <div class="presentaciones">
+        <!-- Ejemplo de presentación -->
+        <div class="card">
+            <h3>Carlos Carrasco</h3>
+            <p>Desarrollador <em>Backend</em> y <em>Front-End</em> apasionado por Python, GitHub y tecnologías libres.</p>
+            <p>Me encanta trabajar con Arduino, Raspberry Pi y ESP-32.</p>
             <div class="links">
-                <a href="https://github.com/Club-Informatico/Intro-presentar" target="_blank">Github:
-                    Intro-presentar</a>
+                <a href="https://www.linkedin.com/in/mg-carlos-carrasco/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/KrlitosForever" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
 
-        <div class="presentaciones">
-            <!-- Ejemplo de presentación -->
-            <div class="card">
-                <h3>Carlos Carrasco</h3>
-                <p>Desarrollador <em>Backend</em> y <em>Front-End</em> apasionado por Python, GitHub y tecnologías
-                    libres.</p>
-                <p>Me encanta trabajar con Arduino, Raspberry Pi y ESP-32.</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/mg-carlos-carrasco/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/KrlitosForever" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+        <div class="card">
+            <h3>Michel Brevis</h3>
+            <p>Desarrollador <em>junior</em> <em>Front-End</em> con experiencia en HTML, CSS y JavaScript.</p>
+                        <div class="photo">
+                <img src="img/MikeBrevis.jpg" alt="">
+            </div>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/michel-brevis/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MikeBrevis" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Leonardo de Requeséns</h3>
+            <p>Ingeniero en Informática, principalmente <em>Backend</em>.</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/lderequesens/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/lderequesensS" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Fernando N. Ramirez</h3>
+            <p> Desarrollador en aprendizaje, enfocado al <em>Backend</em> abierto a aprender <em>Front-End</em>. </p>
+            <ul>
+                <li>Java + Spring Boot, C++, Python y JavaScript</li>
+                <li>Bases de Datos (MySQL, PostgreSQL)</li>
+                <li>Git y GitHub</li>
+            </ul>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/fernando-nicolas-ramirez/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/dev-rmz" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Cristóbal Puga</h3>
+            <p>
+                Desarrollador especializado en automatización de procesos (RPA) y desarrollo Web.
+            </p>
+            <p>
+                Especializado en UiPath Studio para automatización y desarrollo web con enfoque en C#, bases de datos relacionales (SQL) y desarrollo Front-End utilizando HTML, CSS, JavaScript (Vanilla) y Bootstrap.
+            </p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/cristobal-puga-66371814a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Bethlen" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
             </div>
 
-            <div class="card">
-                <h3>Michel Brevis</h3>
-                <p>Desarrollador <em>junior</em> <em>Front-End</em> con experiencia en HTML, CSS y JavaScript.</p>
-                <div class="photo">
-                    <img src="img/MikeBrevis.jpg" alt="Michel Brevis">
-                </div>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/michel-brevis/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/MikeBrevis" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+        <div class="card">
+            <h3>Lucas Cabrera</h3>
+            <p>
+                Analista programador, especializado en lenguajes de POO(php, Java) <em>Backend</em> y <em>Front-End</em> (HTML, CSS, JavaScript) base de datos (SQL, MySQL), aprendiendo programación de IA y Python.
+            </p>
+            <p>
+                Muy interesado en mejorar mis habilidades para automatización de programas con inteligencia artificial y módulos en Python.
+            </p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/lucas-cabrera-288b79277/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/LucasCA2000" target="_blank"><i class="fab fa-github"></i></a>
             </div>
+            </div>
+        
+        <div class="card">
 
-            <div class="card">
-                <h3>Leonardo de Requeséns</h3>
-                <p>Ingeniero en Informática, principalmente <em>Backend</em>.</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/lderequesens/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/lderequesensS" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+            <h3>Diego Barrios</h3>
+            <p>
+                Ingeniero Informático recien titulado, desarrollador <em>Full-Stack</em> con experiencia en <em>automatización con IA</em> y desarrollo móvil.
+            </p>
+            <p>
+                Interesado en <em>Machine Learning</em>, ciberseguridad y automatización.
+            </p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/diego-barrios-ahumada/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/diegobahumada" target="_blank"><i class="fab fa-github"></i></a>
             </div>
+            </div>        
+      
+        <div class="card">
+              <h3>Jorge Slimming</h3>
+              <p>Estudiante 3° año Ingeniería Civil Informática. Desarrollo proyectos de <em>hobbie</em> con el stack PERN. </p>
+              <div class="links">
+                  <a href="https://www.linkedin.com/in/jorgeslimming" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/JorshSlimming" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+              <div class="photo">
+                  <img src="https://media.licdn.com/dms/image/v2/D4E03AQFxluBQkykdLQ/profile-displayphoto-scale_400_400/B4EZkxMe0yGwAk-/0/1757466980408?e=1760572800&v=beta&t=UEvbO4cEhwXzzKfvgqk-QoMUdViCZZ0C0uBsASsLIv8" alt="">
+              </div>
+          </div>
+        <!-- Aquí los demás miembros agregarán su bloque -->
+        <div class="card">
+              <h3>Gerardo Sarmiento</h3>
+              <p>Analista Programador que le encanta el diseño y la creatividad. Con manejo en el área web, pero un entusiasta del <em>ricing</em> y novato en la automatización. Adorador de Disco Elysium.</p>
+              <div class="links">
+                  <a href="https://cl.linkedin.com/in/gerardo-sarmiento-801041237" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/gr4rd" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+              <div class="photo">
+                  <img src="https://media.licdn.com/dms/image/v2/D4E03AQEm3pFwnOms_g/profile-displayphoto-shrink_800_800/B4EZdK8itwHcAc-/0/1749309075622?e=1760572800&v=beta&t=htKzRy_i4TQz-C8Li_0cSkR1H1G6fseVZTmGM6iTMVw" alt="">
+              </div>
+          </div>
 
-            <div class="card">
-                <h3>Fernando N. Ramirez</h3>
-                <p> Desarrollador en aprendizaje, enfocado al <em>Backend</em> abierto a aprender <em>Front-End</em>.
-                </p>
-                <ul>
-                    <li>Java + Spring Boot, C++, Python y JavaScript</li>
-                    <li>Bases de Datos (MySQL, PostgreSQL)</li>
-                    <li>Git y GitHub</li>
-                </ul>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/fernando-nicolas-ramirez/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/dev-rmz" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+        <div class="card">
+              <h3>Cristopher Reyes</h3>
+                      <p>
+                Estudiante de ing. ejecución informática de segundo año sin experiencia laboral.
+            </p>
+            <p>
+                Interesado en Ciberseguridad, servidores, redes, Linux entre otros.
+            </p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/cristopher-reyes-villagra-0202382a0" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/crisp101" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+          </div>
+        
+        <!-- Aquí los demás miembros agregarán su bloque -->
+          <div class="card">
+              <h3>Alejandro Rebolledo</h3>
+              <p>Investigador y docente universitario, especialista en electrónica, programación con enfoque <em>maker</em> y pasión por el aprendizaje continuo. Entusiasta del <em>open source</em>. </p>
+              <div class="links">
+                  <a href="https://www.linkedin.com/in/alejandro-rebolledo-72587756/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/AleReb" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+          </div>
+        <!-- Aquí los demás miembros agregarán su bloque -->
+        <div class="card">
+            <h3>Gustavo Orellana</h3>
+            <p>Ingeniero en Computación e Informática con enfoque en <em>Backend</em> y <em>Front-End</em> apasionado por la
+                creación de soluciones escalables.</p>
+            <p>Me motiva aprender nuevas tecnologías enfocadas en la automatización</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/gustavo-orellana-s%C3%A1nchez/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Gaos700" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-
-            <div class="card">
-                <h3>Cristóbal Puga</h3>
-                <p>
-                    Desarrollador especializado en automatización de procesos (RPA) y desarrollo Web.
-                </p>
-                <p>
-                    Especializado en UiPath Studio para automatización y desarrollo web con enfoque en C#, bases de
-                    datos relacionales (SQL) y desarrollo Front-End utilizando HTML, CSS, JavaScript (Vanilla) y
-                    Bootstrap.
-                </p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/cristobal-puga-66371814a/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Bethlen" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+        </div>
+        <!-- Aquí los demás miembros agregarán su bloque -->
+        <div class="card">
+            <h3>Francisco Briones</h3>
+            <p>
+                Ingeniero de software con 8 años de experiencia, enfocado en <em>Cloud</em>, <em>IA</em> y arquitectura de
+                software.
+            </p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/francisco-javier-briones-letelier-9a5439137/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/FranciscoJBL" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-
-            <div class="card">
-                <h3>Lucas Cabrera</h3>
-                <p>
-                    Analista programador, especializado en lenguajes de POO(php, Java) <em>Backend</em> y
-                    <em>Front-End</em> (HTML, CSS, JavaScript) base de datos (SQL, MySQL), aprendiendo programación de
-                    IA y Python.
-                </p>
-                <p>
-                    Muy interesado en mejorar mis habilidades para automatización de programas con inteligencia
-                    artificial y módulos en Python.
-                </p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/lucas-cabrera-288b79277/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/LucasCA2000" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+        </div>
+        <!-- Aquí los demás miembros agregarán su bloque -->
+        <div class="card">
+            <h3>Jairo Guzmán</h3>
+            <p>
+                Ingeniero en Redes y autodidacta en programación, tratando de mejorar mis conocimientos en automatización y Data
+                Science.
+            </p>
+            <p>
+                Interesado en explotar la automatización para temas de redes, ciberseguridad, reportería y análisis de datos.
+            </p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/jairo-guzman-9bb2311b5/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/triip01" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-
-            <div class="card">
-
-                <h3>Diego Barrios</h3>
-                <p>
-                    Ingeniero Informático recien titulado, desarrollador <em>Full-Stack</em> con experiencia en
-                    <em>automatización con IA</em> y desarrollo móvil.
-                </p>
-                <p>
-                    Interesado en <em>Machine Learning</em>, ciberseguridad y automatización.
-                </p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/diego-barrios-ahumada/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/diegobahumada" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+        </div>
+        <!-- Aquí los demás miembros agregarán su bloque -->
+        <div class="card">
+            <h3>Matías N. Salas</h3>
+            <p><em>Ingeniero de Software</em> apasionado por la programación, el modelado 3D y el desarrollo de videojuegos.</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/dislaik/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Dislaik" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-
-            <div class="card">
-                <h3>Jorge Slimming</h3>
-                <p>Estudiante 3° año Ingeniería Civil Informática. Desarrollo proyectos de <em>hobbie</em> con el stack
-                    PERN. </p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/jorgeslimming" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/JorshSlimming" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="photo">
-                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQFxluBQkykdLQ/profile-displayphoto-scale_400_400/B4EZkxMe0yGwAk-/0/1757466980408?e=1760572800&v=beta&t=UEvbO4cEhwXzzKfvgqk-QoMUdViCZZ0C0uBsASsLIv8"
-                        alt="">
-                </div>
+        </div>
+        <!-- Aquí los demás miembros agregarán su bloque -->
+        <div class="card">
+            <h3>Claudio Castillo</h3>
+            <p>Estudiante 2º año de Ingeniería en Informática. Interesado en mención <em>Ciencia de datos</em>.</p>
+            <p>Apasionado por Bases de datos, SQL, Python.</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/claudiocastillo-/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ClaudioCasti8" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-            <!-- Aquí los demás miembros agregarán su bloque -->
-            <div class="card">
-                <h3>Gerardo Sarmiento</h3>
-                <p>Analista Programador que le encanta el diseño y la creatividad. Con manejo en el área web, pero un
-                    entusiasta del <em>ricing</em> y novato en la automatización. Adorador de Disco Elysium.</p>
-                <div class="links">
-                    <a href="https://cl.linkedin.com/in/gerardo-sarmiento-801041237" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/gr4rd" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="photo">
-                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQEm3pFwnOms_g/profile-displayphoto-shrink_800_800/B4EZdK8itwHcAc-/0/1749309075622?e=1760572800&v=beta&t=htKzRy_i4TQz-C8Li_0cSkR1H1G6fseVZTmGM6iTMVw"
-                        alt="">
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>Cristopher Reyes</h3>
-                <p>
-                    Estudiante de ing. ejecución informática de segundo año sin experiencia laboral.
-                </p>
-                <p>
-                    Interesado en Ciberseguridad, servidores, redes, Linux entre otros.
-                </p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/cristopher-reyes-villagra-0202382a0" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/crisp101" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-
-            <!-- Aquí los demás miembros agregarán su bloque -->
-            <div class="card">
-                <h3>Alejandro Rebolledo</h3>
-                <p>Investigador y docente universitario, especialista en electrónica, programación con enfoque
-                    <em>maker</em> y pasión por el aprendizaje continuo. Entusiasta del <em>open source</em>. </p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/alejandro-rebolledo-72587756/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/AleReb" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <!-- Aquí los demás miembros agregarán su bloque -->
-            <div class="card">
-                <h3>Gustavo Orellana</h3>
-                <p>Ingeniero en Computación e Informática con enfoque en <em>Backend</em> y <em>Front-End</em>
-                    apasionado por la
-                    creación de soluciones escalables.</p>
-                <p>Me motiva aprender nuevas tecnologías enfocadas en la automatización</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/gustavo-orellana-s%C3%A1nchez/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Gaos700" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <!-- Aquí los demás miembros agregarán su bloque -->
-            <div class="card">
-                <h3>Francisco Briones</h3>
-                <p>
-                    Ingeniero de software con 8 años de experiencia, enfocado en <em>Cloud</em>, <em>IA</em> y
-                    arquitectura de
-                    software.
-                </p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/francisco-javier-briones-letelier-9a5439137/"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/FranciscoJBL" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <!-- Aquí los demás miembros agregarán su bloque -->
-            <div class="card">
-                <h3>Jairo Guzmán</h3>
-                <p>
-                    Ingeniero en Redes y autodidacta en programación, tratando de mejorar mis conocimientos en
-                    automatización y Data
-                    Science.
-                </p>
-                <p>
-                    Interesado en explotar la automatización para temas de redes, ciberseguridad, reportería y análisis
-                    de datos.
-                </p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/jairo-guzman-9bb2311b5/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/triip01" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <!-- Aquí los demás miembros agregarán su bloque -->
-            <div class="card">
-                <h3>Matías N. Salas</h3>
-                <p><em>Ingeniero de Software</em> apasionado por la programación, el modelado 3D y el desarrollo de
-                    videojuegos.</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/dislaik/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Dislaik" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <!-- Aquí los demás miembros agregarán su bloque -->
-            <div class="card">
-                <h3>Claudio Castillo</h3>
-                <p>Estudiante 2º año de Ingeniería en Informática. Interesado en mención <em>Ciencia de datos</em>.</p>
-                <p>Apasionado por Bases de datos, SQL, Python.</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/claudiocastillo-/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/ClaudioCasti8" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <!-- Aquí los demás miembros agregarán su bloque -->
-            <div class="card">
+        </div> 
+                <!-- Aquí los demás miembros agregarán su bloque -->
+        <div class="card">
                 <h3>Carlos Leiva</h3>
                 <p>Desarrollador en <em>Visual Basic .Net</em> y Base de datos SQL Server.</p>
                 <p>Alto Conocimiento en Soporte TI </p>
                 <div class="links">
-                    <a href="https://www.linkedin.com/in/carlos-leiva-leal" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/carlos-leiva-leal" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/Blanquitx" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
-            </div>
+        </div>
             <!-- Aquí los demás miembros agregarán su bloque -->
 
-            <div class="card">
-                <h3>Sebastián Meneses</h3>
-                <p>
-                    Estudiante de Ingeniería Civil en Informática. Con interés en <em>Backend</em>, <em>Machine
-                        Learning</em> y automatización.
-                </p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/sebastian-meneses-951b05383/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/SebaaMG" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-
-            <!-- Aquí los demás miembros agregarán su bloque -->
-            <div class="card">
-                <h3>Joaquín Méndez</h3>
-                <p>Ingeniero en informática cesante😢, especialidad en <em>back-end</em> con Java, Go y Javascript (algo
-                    de Rust), gusto por las API Rest, fanático del fútbol y últimamente de la F1.</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/joaquín-méndez-torres-5400a41a2" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/juackomdz" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-
-            </div>
-            <div class="card">
-                <h3>Christian Bugmann</h3>
-                <p>De profesión soy ingeniero civil en minería, pero siempre he trabajado en proyectos de tecnología. He
-                    levantado procesos y diseñado/desarrollado RPA para optimizarlos, ahora estoy de PMO en un proyecto
-                    de tecnología en una Clínica de Santiago</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/christian-bugmann/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/NicoBooguie" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-
-            <!-- Aquí los demás miembros agregarán su bloque -->
-            <div class="card">
-                <h3>Juan Salcedo Garrido</h3>
-                <p>Estudiante 4º año de Ingeniería civil en Informática. Interesado en <em>Cloud Computing</em>.</p>
-                <p>Apasionado por profundizar sus conocimientos en Linux, redes y servicios en la nube.</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/juan-luis-salcedo-garrido-93160124b/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/jlasalcedog" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>Moises Magna</h3>
-                <p>Desarrollador Senior Front-end - Angular - Vue - React</p>
-                <p>Me encanta hacer ejercicios de algoritmos en Leetcode</p>
-                <div class="photo">
-                    <img src="img/moises-magna.jpg" alt="moises magna">
-                </div>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/moisesmagna/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/mmagna" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+<div class="card">
+            <h3>Sebastián Meneses</h3>
+            <p>
+                Estudiante de Ingeniería Civil en Informática. Con interés en <em>Backend</em>, <em>Machine Learning</em> y automatización.
+            </p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/sebastian-meneses-951b05383/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SebaaMG" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
 
-        <footer>
-            Club Informático Chile - Código abierto y colaborativo 💻
-        </footer>
+            <!-- Aquí los demás miembros agregarán su bloque -->
+          <div class="card">
+              <h3>Joaquín Méndez</h3>
+              <p>Ingeniero en informática cesante😢, especialidad en <em>back-end</em> con Java, Go y Javascript (algo de Rust), gusto por las API Rest, fanático del fútbol y últimamente de la F1.</p>
+              <div class="links">
+                  <a href="https://www.linkedin.com/in/joaquín-méndez-torres-5400a41a2" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/juackomdz" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+
+          </div>
+            <div class="card">
+    <h3>Christian Bugmann</h3>
+    <p>De profesión soy ingeniero civil en minería, pero siempre he trabajado en proyectos de tecnología. He levantado procesos y diseñado/desarrollado RPA para optimizarlos, ahora estoy de PMO en un proyecto de tecnología en una Clínica de Santiago</p>
+    <div class="links">
+        <a href="https://www.linkedin.com/in/christian-bugmann/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/NicoBooguie" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</div>
+
+            <!-- Aquí los demás miembros agregarán su bloque -->
+        <div class="card">
+            <h3>Juan Salcedo Garrido</h3>
+            <p>Estudiante 4º año de Ingeniería civil en Informática. Interesado en <em>Cloud Computing</em>.</p>
+            <p>Apasionado por profundizar sus conocimientos en Linux, redes y servicios en la nube.</p>
+            <div class="links"> 
+                <a href="https://www.linkedin.com/in/juan-luis-salcedo-garrido-93160124b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/jlasalcedog" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+    </div>
+</div>
+
+<footer>
+    Club Informático Chile - Código abierto y colaborativo 💻
+</footer>
 
 </body>
 <!-- Bloque de prueba -->
